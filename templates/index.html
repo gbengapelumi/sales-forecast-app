@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Sales Forecasting Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Sales Forecasting Application</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('predict') }}">Predict Sales</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>About This Application</h2>
+            <p>This application helps you forecast sales based on historical data. Simply navigate to the "Predict Sales" page to enter your data and receive predictions.</p>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Sales Forecasting Application. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
